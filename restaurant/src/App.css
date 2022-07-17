@@ -56,22 +56,28 @@ table {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .linki {
   display: flex;
   justify-content: space-around;
   width: 70%;
   color: white;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-weight: bold;
 }
 .resultContainer {
   display: flex;
 }
-.napis1 {
+.napis1 a {
   color: #FEA100;
+  font-size: 30px;
 }
 .napis2 {
   color: white;
+  font-size: 18px;
 }
 header {
   background-color: lightgray;
@@ -79,15 +85,81 @@ header {
 .split {
   display: flex;
   flex-direction: column;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 100px;
+}
+.split h1 {
+  font-size: 30px;;
+}
+.split h2 {
+
+}
+.split a {
+  color: gray;
+  font-size: 15px;;
 }
 .btn {
-  background-color: yellow;
+  background-color: #FEA100;
   font-size: 16px;
   border-color: white;
-  border-radius: 10%;
+  border-radius: 15%;
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
+  color: white;
+}
+.gallery {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 50px;;
+}
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+.rec.rec-arrow:enabled {
+  visibility: hidden;
+}
+button.rec-dot{
+  background-color: black;
+  box-shadow: 0 0 1px 3px black;
+}
+
+button.rec-dot:hover {
+  box-shadow: 0 0 1px 3px orange;
+}
+button.rec-dot:focus {
+  background-color: orange;
+  box-shadow: 0 0 1px 3px orange;
+}
+button.rec-dot:active {
+  background-color: orange;
+}
+.teast {
+  background-color: lightgray;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 130px;
+}
+.teast h1{
+  font-size: 60px;
+}
+.teast h2{
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.teast a{
+  color: #FEA100;
+}
+.teast img{
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teast p{
+  font-size: 40px;
 }
 .wrapper {
   display: flex;
