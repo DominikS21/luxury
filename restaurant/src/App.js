@@ -2,8 +2,11 @@ import './App.css';
 import icon_cart from './img/icon_cart.png';
 import icon_phone from './img/icon_phone.png';
 import icon_plate from './img/icon_plate.png';
+import fff from './img/fff.png';
+import fff2 from './img/fff2.png';
 import Carousel from "react-elastic-carousel";
 import Item from "./item.js";
+import React from 'react';
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
@@ -40,7 +43,7 @@ function App() {
               <li><a>Pages</a></li>
               <li><a>Contact</a>
               <img src={icon_cart}/></li>
-              <li><button class="btn warning">
+              <li><button>
               <img src={icon_plate}/>Book your table</button></li>
             </ul>
         </div>
@@ -73,26 +76,62 @@ function App() {
      </div>
       </div>
       <div className='reserve'>
-
+      <img className='zdj1' src={fff}></img>
+      <img className='zdj2' src={fff}></img>
+        <div className='container'>
+        <h1>Reserve your table</h1>
+          <div className='split2'>
+            <div>
+              <input type='text' placeholder='Name'></input><br></br>
+              <input type='text' placeholder='Time'></input><br></br>
+              <input type='text' placeholder='Guests'></input><br></br>
+              <div className='wrapper2'>
+              <button> MAKE RESERVATION</button>
+              <div className='np'>
+              <span className='napisr'>
+               <a> YOU CAN ALSO CALL </a><br/>
+              <span className='napisr2'>
+                FOR A RESERVATION
+              </span>
+    </span>
+    </div>
+  </div>
+            </div>
+            <div>
+              <input type='text' placeholder='Email address'></input><br></br>
+              <input type='text' placeholder='Date'></input><br></br>
+              <input type='text' placeholder='Phone'></input><br></br>
+              <p>1-007 000 005</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='clients'>
-
+      <div className='happy'> 
+        <div className='zdjecie11'> 
+          <img src={fff2}></img>
+        </div>
+          <div className='tekst11'> 
+            <h1 className='ttt'>Happy Clients</h1> 
+            <h2 className='ttt2'>Best atmosphere and food</h2> 
+            <h3 className='ttt3'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</h3>
+            <h4 className='ttt4'>DR. PRABAKARAN JOHN</h4>
+          </div>
       </div>
       <div className='gallery'>
         <h1> Our Gallery</h1>
       <Carousel breakPoints={breakPoints}>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
-          <Item><img src={icon_cart}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
+          <Item><img src={fff}/></Item>
         </Carousel>
       </div>
       <div className='hours'>
-
+        <h1> Opening Hours</h1>
       </div>
       
     </body>

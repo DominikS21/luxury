@@ -51,6 +51,13 @@ table {
   display: flex;
   flex-direction: column;
 }
+.reserve input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius:5px ;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -71,6 +78,79 @@ table {
 .resultContainer {
   display: flex;
 }
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+.reserve {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #565F61;
+}
+.reserve p{
+  padding-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+.hours {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.hours h1 {
+  font-size: 35px;
+}
+.reserve h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.reserve button {
+  background-color: #FEA100;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.zdj1 {
+  transform: translateY(-100px);
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.zdj2 {
+  transform: translateY(150px);
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.np {
+  text-align: justify;
+}
+.menu {
+  padding-bottom:200px;
+}
+.wrapper2 {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.wrapper2 span {
+}
+.napisr a {
+  color: white;
+}
+.napisr2 {
+  color: #FE4C8D;
+}
+.split2 {
+  display: flex;
+  flex-direction: column;
+}
 .napis1 a {
   color: #FEA100;
   font-size: 30px;
@@ -80,15 +160,14 @@ table {
   font-size: 18px;
 }
 header {
-  background-color: lightgray;
+  background-color: #7D8587;
 }
 .split {
   display: flex;
   flex-direction: column;
-  margin-left: 400px;
-  margin-right: 400px;
   padding-top: 100px;
 }
+
 .split h1 {
   font-size: 30px;;
 }
@@ -99,20 +178,64 @@ header {
   color: gray;
   font-size: 15px;;
 }
-.btn {
-  background-color: #FEA100;
-  font-size: 16px;
-  border-color: white;
-  border-radius: 15%;
-  cursor: pointer;
-  display: inline-block;
+.happy{
+  display: flex;
+  margin-left: 400px;
+  margin-right: 300px;
+  margin-top: 50px;
+  gap: 20px;
+  font-family: Sinton;
+}
+
+.tekst11 {
+  margin-top: 20px;
+}
+
+.ttt{
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+.ttt2{
+  font-size: 23px;
+  padding-bottom: 15px;
+
+}
+
+.ttt3{
+padding-bottom: 50px;
+}
+
+.ttt4{
+
+
+}
+
+.ttt22{
+  position: absolute;
+  padding-bottom: 15px;
+}
+.linki button {
   text-transform: uppercase;
+  background-color: #FEA100;
+  border: none;
   color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .gallery {
-  padding-top: 300px;
+  padding-top: 100px;
   text-align: center;
-  font-size: 50px;;
+  padding-bottom: 100px;
+  background-color: #EDF1F3;
+}
+.gallery h1{
+  padding-bottom: 40px;
+  font-size: 30px;
 }
 .rec.rec-arrow:disabled {
   visibility: hidden;
@@ -126,6 +249,7 @@ button.rec-dot{
 }
 
 button.rec-dot:hover {
+  background-color: orange;
   box-shadow: 0 0 1px 3px orange;
 }
 button.rec-dot:focus {
@@ -134,9 +258,10 @@ button.rec-dot:focus {
 }
 button.rec-dot:active {
   background-color: orange;
+  box-shadow: 0 0 1px 3px orange;
 }
 .teast {
-  background-color: lightgray;
+  background-color: #7D8587;
   color: white;
   text-align: center;
   padding-top: 200px;
@@ -179,4 +304,17 @@ button.rec-dot:active {
     margin-left: 2em;
   }
 
+}
+@media (min-width: 40em) {
+  .split2 {
+    flex-direction: row;
+  }
+
+  .split2 > * {
+    flex-basis: 100%;
+  }
+
+  .split2 > * + * {
+    margin-left: 2em;
+  }
 }
