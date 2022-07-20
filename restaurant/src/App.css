@@ -95,9 +95,42 @@ table {
 .hours {
   padding-top: 100px;
   padding-bottom: 100px;
+  text-align: right;
+  margin-right: 100px;
 }
 .hours h1 {
-  font-size: 35px;
+  font-size: 30px;
+}
+.hours p {
+  color:#FEA100;
+  font-size: 25px;
+}
+.zdj3 {
+  transform: translateY(-80px);
+  float: right;
+}
+.b1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #3B5998;
+  margin-right: 5px;
+}
+.b2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #55ACEE;
+  margin-right: 5px;
+}
+.b3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #DD4B39;
 }
 .reserve h1{
   color: white;
@@ -133,14 +166,20 @@ table {
 .menu {
   padding-bottom:200px;
 }
+.menu h1 {
+  padding-bottom: 10px;
+}
+.menu h4 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
 .wrapper2 {
   display: flex;
   align-self: center;
   text-align: center;
   padding-top: 20px;
 }
-.wrapper2 span {
-}
+
 .napisr a {
   color: white;
 }
@@ -171,12 +210,20 @@ header {
 .split h1 {
   font-size: 30px;;
 }
-.split h2 {
-
-}
 .split a {
   color: gray;
   font-size: 15px;;
+}
+.split button {
+  background-color: #FEA100;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  height: 40px;
+  margin-top: 40px;
 }
 .happy{
   display: flex;
@@ -187,30 +234,25 @@ header {
   font-family: Sinton;
 }
 
-.tekst11 {
+.clients {
   margin-top: 20px;
 }
 
-.ttt{
+.clients h1{
   font-size: 30px;
   padding-bottom: 20px;
   text-align: center;
 
 }
 
-.ttt2{
+.clients h2{
   font-size: 23px;
   padding-bottom: 15px;
 
 }
 
-.ttt3{
+.clients h3{
 padding-bottom: 50px;
-}
-
-.ttt4{
-
-
 }
 
 .ttt22{
@@ -226,6 +268,10 @@ padding-bottom: 50px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  height: 40px;
+}
+.linki button img {
+  margin-right: 10px;
 }
 .gallery {
   padding-top: 100px;
@@ -260,6 +306,27 @@ button.rec-dot:active {
   background-color: orange;
   box-shadow: 0 0 1px 3px orange;
 }
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fcolumn {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
 .teast {
   background-color: #7D8587;
   color: white;
@@ -291,7 +358,69 @@ button.rec-dot:active {
   align-self: center;
   text-align: center;
 }
-
+footer {
+  background-color: #373844;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+footer h1 {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+footer li {
+  padding-bottom: 7px;
+  color: #ADB2B7;
+}
+.sub {
+  background-color: #FEA100;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+footer a {
+  color:#ADB2B7;
+}
+footer input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius:5px ;
+  background-color: #373844;
+}
+.right img {
+  vertical-align: middle;
+  margin-right: 5px;
+  float: left;
+  margin-left: 10px;
+}
+.get {
+  background-color: #52535E;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  height: 70px;
+  width: 60%;
+  font-size: 10px;
+}
+.copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+  COLOR: #ADB2B7;
+}
+.get span {
+  font-size: 14px;
+}
 @media (min-width: 40em) {
   .split {
     flex-direction: row;

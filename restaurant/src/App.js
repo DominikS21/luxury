@@ -4,6 +4,9 @@ import icon_phone from './img/icon_phone.png';
 import icon_plate from './img/icon_plate.png';
 import fff from './img/fff.png';
 import fff2 from './img/fff2.png';
+import fff3 from './img/fff3.png';
+import icon_apple from './img/icon_apple.png';
+import icon_Google_Play from './img/icon_Google_Play.png';
 import Carousel from "react-elastic-carousel";
 import Item from "./item.js";
 import React from 'react';
@@ -67,7 +70,8 @@ function App() {
            <h4>TOASTED JAM </h4>
            <a> Phasellus a ex accumsan, sollicitudin</a>
            <h4>TOASTED JAM </h4>
-           <a>Phasellus a ex accumsan, sollicitudin </a>
+           <a>Phasellus a ex accumsan, sollicitudin </a> <br></br>
+           <button>EXPLORE FOOD MENU</button>
          </div>
          <div>
            <h1>Today Special</h1>
@@ -107,14 +111,14 @@ function App() {
         </div>
       </div>
       <div className='happy'> 
-        <div className='zdjecie11'> 
+        <div className='happyzdj'> 
           <img src={fff2}></img>
         </div>
-          <div className='tekst11'> 
-            <h1 className='ttt'>Happy Clients</h1> 
-            <h2 className='ttt2'>Best atmosphere and food</h2> 
-            <h3 className='ttt3'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</h3>
-            <h4 className='ttt4'>DR. PRABAKARAN JOHN</h4>
+          <div className='clients'> 
+            <h1 >Happy Clients</h1> 
+            <h2 >Best atmosphere and food</h2> 
+            <h3 >Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</h3>
+            <h4 >DR. PRABAKARAN JOHN</h4>
           </div>
       </div>
       <div className='gallery'>
@@ -131,9 +135,66 @@ function App() {
         </Carousel>
       </div>
       <div className='hours'>
-        <h1> Opening Hours</h1>
+          <div className='row'>
+            <div className='column'>
+            <h1> Opening Hours</h1>
+            </div>
+            <div className='column'>
+            <h3> Monday to Friday</h3>
+            <p> 10am - 10pm</p>
+            </div>
+            <div className='column'>
+            <h3> Saturday to Sunday</h3>
+            <p> 09am - 11pm</p>
+            </div>
+            <div className='column'>
+            </div>
+        </div>
+        <img className='zdj3' src={fff3}></img>
       </div>
-      
+    <footer>
+      <div className='container'>
+      <div className='row'>
+        <div className='fcolumn left'>
+          <h1> Navigation</h1>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Menu</li>
+            <li>Reservation</li>
+            <li>Recipe</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div className='fcolumn middle'>
+          <ul>
+          <h1> News letter</h1>
+         <li> <a> Enter your email address and subscribe daily newsletter</a> </li>
+         <li><input type="text" placeholder='Email Address'></input>
+          <button className='sub'>SUBSCRIBE</button> </li>
+          <li>
+            <button className='b1'></button>
+            <button className='b2'></button>
+            <button className='b3'></button>
+          </li>
+          </ul>
+        </div>
+        <div className='fcolumn right'>
+          <h1> Our app avilable</h1>
+          <ul>
+            <li><button className='get'> <img src={icon_apple}></img>Avilable on the <br></br>
+            <span>App Store </span>
+            </button></li>
+            <li><button className='get'> <img src={icon_Google_Play}></img> Get it on <br></br>
+            <span>Google Play </span>
+            </button></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <p className='copyright'> 2018 © LUXURY RESTAURANT, ALL RIGHTS RESERVED</p>
+    </footer>
     </body>
 
   );
