@@ -44,8 +44,8 @@ function App() {
               <li><a>Recipe</a></li>
               <li><a>Blog</a></li>
               <li><a>Pages</a></li>
-              <li><a>Contact</a>
-              <img src={icon_cart}/></li>
+              <li><a>Contact</a></li>
+              <li><img src={icon_cart}/></li>
               <li><button>
               <img src={icon_plate}/>Book your table</button></li>
             </ul>
@@ -123,7 +123,7 @@ function App() {
       </div>
       <div className='gallery'>
         <h1> Our Gallery</h1>
-      <Carousel breakPoints={breakPoints}>
+      <Carousel itemPadding={[0, 50]} breakPoints={breakPoints}>
           <Item><img src={fff}/></Item>
           <Item><img src={fff}/></Item>
           <Item><img src={fff}/></Item>

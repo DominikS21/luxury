@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sintony:wght@400;700&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family: 'Sintony', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -65,6 +66,7 @@ table {
   min-height: 8vh;
   margin-left: 80px;
   margin-right: 80px;
+  font-family: 'Sintony', sans-serif;
 }
 .linki {
   display: flex;
@@ -74,6 +76,8 @@ table {
   text-transform: uppercase;
   font-family: "Playfair Display";
   font-weight: bold;
+  overflow: hidden;
+  font-family: 'Sintony', sans-serif;
 }
 .resultContainer {
   display: flex;
@@ -108,6 +112,7 @@ table {
 .zdj3 {
   transform: translateY(-80px);
   float: right;
+  display: block;
 }
 .b1 {
   width: 40px;
@@ -265,6 +270,7 @@ padding-bottom: 50px;
   border: none;
   color: white;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -272,6 +278,10 @@ padding-bottom: 50px;
 }
 .linki button img {
   margin-right: 10px;
+  vertical-align: middle; 
+}
+.linki img {
+  size: 199px;
 }
 .gallery {
   padding-top: 100px;
