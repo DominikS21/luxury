@@ -45,16 +45,16 @@ function App() {
               <li><a>Blog</a></li>
               <li><a>Pages</a></li>
               <li><a>Contact</a></li>
-              <li><img src={icon_cart}/></li>
+              <li><img src={icon_cart} alt='icon cart'/></li>
               <li><button>
-              <img src={icon_plate}/>Book your table</button></li>
+              <img src={icon_plate} alt='icon plate'/>Book your table</button></li>
             </ul>
         </div>
       </header>
       <div className='teast'>
         <h1> Teast your fav dish </h1>
         <h2> from luxury restaurent. </h2>
-        <img src={icon_phone}/>
+        <img src={icon_phone} alt='icon phone'/>
         <a>CALL US AND BOOK YOUR TABLE</a>
         <p>1-008 005 006</p>
       </div>
@@ -80,8 +80,8 @@ function App() {
      </div>
       </div>
       <div className='reserve'>
-      <img className='zdj1' src={fff}></img>
-      <img className='zdj2' src={fff}></img>
+      <img className='zdj1' src={fff} alt='example'></img>
+      <img className='zdj2' src={fff} alt='example'></img>
         <div className='container'>
         <h1>Reserve your table</h1>
           <div className='split2'>
@@ -112,7 +112,7 @@ function App() {
       </div>
       <div className='happy'> 
         <div className='happyzdj'> 
-          <img src={fff2}></img>
+          <img src={fff2} alt='example'></img>
         </div>
           <div className='clients'> 
             <h1 >Happy Clients</h1> 
@@ -124,14 +124,14 @@ function App() {
       <div className='gallery'>
         <h1> Our Gallery</h1>
       <Carousel itemPadding={[0, 50]} breakPoints={breakPoints}>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
-          <Item><img src={fff}/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
+          <Item><img src={fff} alt='example'/></Item>
         </Carousel>
       </div>
       <div className='hours'>
@@ -150,7 +150,7 @@ function App() {
             <div className='column'>
             </div>
         </div>
-        <img className='zdj3' src={fff3}></img>
+        <img className='zdj3' src={fff3} alt='example' ></img>
       </div>
     <footer>
       <div className='container'>
@@ -183,10 +183,10 @@ function App() {
         <div className='fcolumn right'>
           <h1> Our app avilable</h1>
           <ul>
-            <li><button className='get'> <img src={icon_apple}></img>Avilable on the <br></br>
+            <li><button className='get'> <img src={icon_apple} alt='icon apple'></img>Avilable on the <br></br>
             <span>App Store </span>
             </button></li>
-            <li><button className='get'> <img src={icon_Google_Play}></img> Get it on <br></br>
+            <li><button className='get'> <img src={icon_Google_Play} alt='icon google play'></img> Get it on <br></br>
             <span>Google Play </span>
             </button></li>
           </ul>
