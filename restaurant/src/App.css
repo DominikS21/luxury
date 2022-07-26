@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sintony&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,7 +47,100 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+.resultContainer {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.logoLinki {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  overflow: hidden;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+}
+.logoLinki button {
+  text-transform: uppercase;
+  background-color: #FEA100;
+  border: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
 
+}
+.logoLinki button img {
+  margin-right: 10px;
+  vertical-align: middle; 
+}
+.logoLinki img {
+  size: 199px;
+}
+.logoLuxury a {
+  color: #FEA100;
+  font-size: 33px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+.logoRestaurant  {
+  color: white;
+  font-size: 18px;
+}
+header {
+  background-color: #7D8587;
+}
+.wrapper {
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+
+.teast {
+  background-color: #7D8587;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 130px;
+}
+.teast h1{
+  font-size: 60px;
+}
+.teast h2{
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.teast a{
+  color: #FEA100;
+  font-weight: bold;
+  font-size: 14px;
+}
+.teast img{
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teast p{
+  font-size: 36px;
+}
 .split {
   display: flex;
   flex-direction: column;
@@ -59,33 +152,7 @@ table {
   box-sizing: border-box;
   border-radius:5px ;
 }
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  margin-left: 80px;
-  margin-right: 80px;
-  font-family: 'Sintony', sans-serif;
-}
-.linki {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Playfair Display";
-  font-weight: bold;
-  overflow: hidden;
-  font-family: 'Sintony', sans-serif;
-}
-.resultContainer {
-  display: flex;
-}
-.container {
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
-}
+
 .reserve {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -96,52 +163,13 @@ table {
   color: white;
   font-size: 20px;
 }
-.hours {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: right;
-  margin-right: 100px;
-}
-.hours h1 {
-  font-size: 30px;
-}
-.hours p {
-  color:#FEA100;
-  font-size: 25px;
-}
-.zdj3 {
-  transform: translateY(-80px);
-  float: right;
-  display: block;
-}
-.b1 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  border: none;
-  background-color: #3B5998;
-  margin-right: 5px;
-}
-.b2 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  border: none;
-  background-color: #55ACEE;
-  margin-right: 5px;
-}
-.b3 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  border: none;
-  background-color: #DD4B39;
-}
+
 .reserve h1{
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   padding-bottom: 30px;
+  font-family: 'Sintony', sans-serif;
 }
 .reserve button {
   background-color: #FEA100;
@@ -172,11 +200,20 @@ table {
   padding-bottom:200px;
 }
 .menu h1 {
-  padding-bottom: 10px;
+  font-family: 'Sintony', sans-serif;
+  font-size: 35px;
+  padding-bottom: 15px;
 }
 .menu h4 {
   padding-bottom: 5px;
   padding-top: 10px;
+  font-size: 16px;
+  font-family: 'Sintony', sans-serif;
+}
+.menu a {
+  color: #5C6369;
+  font-size: 14px;
+  font-family: 'Sintony', sans-serif;
 }
 .wrapper2 {
   display: flex;
@@ -195,30 +232,12 @@ table {
   display: flex;
   flex-direction: column;
 }
-.napis1 a {
-  color: #FEA100;
-  font-size: 30px;
-}
-.napis2 {
-  color: white;
-  font-size: 18px;
-}
-header {
-  background-color: #7D8587;
-}
 .split {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
 }
 
-.split h1 {
-  font-size: 30px;;
-}
-.split a {
-  color: gray;
-  font-size: 15px;;
-}
 .split button {
   background-color: #FEA100;
   border: none;
@@ -226,9 +245,47 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
-  height: 40px;
+  font-size: 14px;
+  height: 50px;
   margin-top: 40px;
+  font-family: 'Sintony', sans-serif;
+  border-radius: 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: left;
+  z-index: 0;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: left;
+  z-index: -1;
+
+}
+.cardContainer {
+  padding: 2px 16px;
+}
+.cardColumn {
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+}
+.card img, .card2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlap {
+  position: absolute;
+}
+.card h4, .card2 h4 {
+  font-family: 'Sintony', sans-serif;
+  padding-bottom: 10px;
+}
+.card p, .card2 p {
+  font-size: 14px;
+  color:#FEA100;
+  padding-bottom: 20px;
 }
 .happy{
   display: flex;
@@ -241,48 +298,30 @@ header {
 
 .clients {
   margin-top: 20px;
+  font-family: 'Sintony', sans-serif;
+  
 }
 
 .clients h1{
-  font-size: 30px;
+  font-size: 35px;
   padding-bottom: 20px;
   text-align: center;
 
 }
 
 .clients h2{
-  font-size: 23px;
+  font-size: 22px;
   padding-bottom: 15px;
 
 }
 
 .clients h3{
 padding-bottom: 50px;
+font-size: 15px;
+color: #363D43;
 }
 
-.ttt22{
-  position: absolute;
-  padding-bottom: 15px;
-}
-.linki button {
-  text-transform: uppercase;
-  background-color: #FEA100;
-  border: none;
-  color: white;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  height: 40px;
-}
-.linki button img {
-  margin-right: 10px;
-  vertical-align: middle; 
-}
-.linki img {
-  size: 199px;
-}
+
 .gallery {
   padding-top: 100px;
   text-align: center;
@@ -320,13 +359,30 @@ button.rec-dot:active {
   float: left;
   width: 25%;
 }
-
+.openingHours {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: right;
+  margin-right: 100px;
+}
+.openingHours h1 {
+  font-size: 30px;
+}
+.openingHours p {
+  color:#FEA100;
+  font-size: 25px;
+}
+.zdj3 {
+  transform: translateY(-80px);
+  float: right;
+  display: block;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.fcolumn {
+.footerColumn {
   float: left;
 }
 
@@ -337,37 +393,7 @@ button.rec-dot:active {
 .middle {
   width: 50%;
 }
-.teast {
-  background-color: #7D8587;
-  color: white;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 130px;
-}
-.teast h1{
-  font-size: 60px;
-}
-.teast h2{
-  font-size: 40px;
-  padding-bottom: 50px;
-}
-.teast a{
-  color: #FEA100;
-}
-.teast img{
-  padding-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.teast p{
-  font-size: 40px;
-}
-.wrapper {
-  display: flex;
-  align-self: center;
-  text-align: center;
-}
+
 footer {
   background-color: #373844;
   margin-left: auto;
@@ -384,7 +410,7 @@ footer li {
   padding-bottom: 7px;
   color: #ADB2B7;
 }
-.sub {
+.subscribeButton {
   background-color: #FEA100;
   border: none;
   color: white;
@@ -407,13 +433,36 @@ footer input {
   background-color: #373844;
   color: white;
 }
+.b1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #3B5998;
+  margin-right: 5px;
+}
+.b2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #55ACEE;
+  margin-right: 5px;
+}
+.b3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #DD4B39;
+}
 .right img {
   vertical-align: middle;
   margin-right: 5px;
   float: left;
   margin-left: 10px;
 }
-.get {
+.appstore {
   background-color: #52535E;
   border: none;
   border-radius: 3px;
@@ -430,7 +479,7 @@ footer input {
   margin-bottom:0;
   COLOR: #ADB2B7;
 }
-.get span {
+.appstore span {
   font-size: 14px;
 }
 @media (min-width: 40em) {
